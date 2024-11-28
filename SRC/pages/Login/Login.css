@@ -1,0 +1,27 @@
+
+#login{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logimgMusic{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    rotate: -30deg;
+    top: 100px;
+    right: 30%;
+    z-index: 9999999;
+    height: 1000px;
+    width: 1000px;
+    opacity: 50%;
+}
+@media (max-width: 533px) { 
+    .logimgMusic{
+        display: none;
+    }
+}
+

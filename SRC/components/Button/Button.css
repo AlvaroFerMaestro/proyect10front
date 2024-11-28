@@ -1,0 +1,10 @@
+.main-button{
+    background-color: #f9f9f9;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    z-index: 99999999;
+    cursor: pointer;   
+    margin-bottom: 100px;
+}

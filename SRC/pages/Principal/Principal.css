@@ -1,0 +1,75 @@
+#principal{
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 300px; 
+    flex-wrap: wrap;
+    gap: 40px;
+    z-index: 99999999999999999999999999999999999999999;
+}
+.divEvento{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    gap: 20px;
+    border: 1px rgb(81, 81, 81) solid;
+    border-radius: 10px;
+    color: rgb(209, 207, 207);
+    padding-top: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(10, 10, 10, 0.886);
+    z-index: 9999999999999999;
+    cursor: pointer;
+} 
+
+
+.divEvento > img{
+    object-fit: contain;
+    /* height: 210px; */
+}
+
+.divMusic{
+    display: block;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    rotate: -30deg;
+    top: 500px;
+    left: -100px;
+    z-index: 9;
+}
+
+ .imgMusic{
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    opacity: 50%;
+    z-index: 9;
+ }
+
+ @media (max-width: 1200px) { 
+    .divMusic{
+        .imgMusic{
+            display: block;
+            height: 700px;
+            width: 700px;
+            opacity: 50%;
+            z-index: 9;
+         }
+    }
+ }
+
+ @media (max-width: 791px) { 
+    .divMusic{
+        .imgMusic{
+            display: none;
+         }
+    }
+ }

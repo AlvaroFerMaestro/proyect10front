@@ -1,0 +1,46 @@
+.carousel{
+    /* margin-top: 100px; */
+    position: absolute;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+    margin-left: 9%;
+    width: 80%;
+    background-image: url("https://www.shutterstock.com/shutterstock/photos/2275219933/display_1500/stock-vector-vector-illustration-with-australia-theme-doodles-vibrant-and-eye-catching-banner-design-capturing-2275219933.jpg");
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+.wrap{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 350px;
+    justify-items: stretch;
+    animation: slide 40s linear infinite;
+}
+
+.wrap img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.555);
+}
+@media (max-width: 400px) {
+    .wrap{
+        grid-auto-columns: 200px;
+    }
+    .wrap img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@keyframes slide {
+    to{
+        translate: calc(-4 * 430px);
+    }
+}
